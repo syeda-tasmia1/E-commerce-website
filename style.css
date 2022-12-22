@@ -1,17 +1,19 @@
+body{
+    background-color: whitesmoke;
+}
 /* CSS Reset */
 *{
     margin: 0;
     padding: 0;
 }
-
 /* Navigation Bar */
 #navbar{
     display: flex;
     align-items: center;
     position: relative;
     top: 0px;
+    position: sticky;
 }
-
 /* Navbar Logo */
 #logo img{
     margin: 15px 15px;
@@ -19,24 +21,19 @@
     cursor: pointer;
     border-radius: 20px;
 }
-
 #logo{
     margin: 5px 19px;
 }
-
 /* List Styling */
-
 #navbar li{
     color: black;
     list-style: none;
     font-size: 1.3rem;
 }
-
 #navbar ul{
     display: flex;
     font-family: 'Secular One', sans-serif;
 }
-
 #navbar::before{
     content: "";
     background-color: rgb(239, 113, 46);
@@ -48,8 +45,6 @@
     z-index: -1;
     opacity:0.7;
 }
-
-
 #navbar a{
     color: black;
     display: block;
@@ -57,117 +52,55 @@
     border-radius: 20px;
     text-decoration: none;
 }
-
 #navbar a:hover{
     color: white;
     font-size: 25px;
 }
-
+.cart{
+    margin-left: 500px;
+    cursor: pointer;
+}
+.cart :hover{
+    color: white;
+    font-size: larger;
+}
 /* Home Section */
-
 #home{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 716px;
+    height: 578px;
     justify-content: center;
     align-items: center;
 }
-
 #home::before{
     content: "";
     background: url(./back.img) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100%;
+    height: 642px;
     width: 100%;
     z-index: -1;
     opacity:0.49;
 }
-
 #home h1{
     color: black;
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
-
 #home p{
     color: black;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
 }
-/* service section */
-#services{
-    margin: 34px;
-    display: flex;    
-}
-
-#services .box{
-    border: 2px solid brown;
-    margin: 3px 6px;
-    border-radius: 23px;
-    padding: 34px;
-}
-
-#services .box p{
-    text-align: center;
-    font-family: 'Bree Serif', serif;
-}
-
-#services .box img{
-    height: 80px;
-    display: block;
-    margin: auto;
-    border-radius: 15px;
-}
-
-/* client Section */
-#clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#client-section{
-    height: 344px;
-}
-
-/* #client-section::before{
-    content: "";
-    position: absolute;
-    background: url(./background.jpg);
-    width: 100%;
-    height: 100%;
-    z-index: -4;
-    opacity: 0.4;
-}     */
-
-.client-items{
-    padding: 40px;
-}
-#clients img{
-    height: 110px;
-}
-
-
-
-/* Utility Classes remove*/
 .h-primary{
     font-family: 'Bree Serif', serif;
     font-size: 3.8rem;
     padding: 15px;
     
 }
-
-.h-secondary{
-    font-family: 'Bree Serif', serif;
-    font-size: 2.2rem;
-    padding: 22px;
-    text-align: center;
-    
-}
-
 .btn{
     padding: 6px 12px;
     font-size: 1.2rem;
@@ -178,7 +111,6 @@
     margin: 17px;
     border-radius: 12px;
 }
-
 .btn:hover{
     font-size: x-large;
 }
@@ -186,5 +118,87 @@
 .center{
     text-align: center;
 }
+/* ---------shoes---------- */
+h1{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.box{
+    border: 2px solid white;
+    text-align: center;
+    background-color: rgb(239, 232, 232);
+    margin: 11px;
+    /* align-items: center; */
+}
+.box img{
+    height: 180px;
+    margin: auto;
+    display: block;
+}
+#men{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box p{
+    color: rgb(91, 87, 87);
+    font-size: large;
+}
+.box button{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 6px 12px;
+    font-size: medium;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: black;
+    color: white;
+}
+#women{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#kid{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: rgb(239, 113, 46);
+    z-index: -1;
+    opacity:0.7;
+    color: black;
+    padding-top: 10px;
+}
+.footeritems{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}
+footer li{
+    cursor: pointer;
+    list-style: none;
+}
+.footeritems ul :hover{
+    color: white;
+}
 
-
+#list{
+    display: flex;
+}
+#list li{
+    margin: 2%;
+}
+.inner{
+    position: absolute;
+    display: none;
+}
+.outer :hover .inner{
+    display: block;
+}

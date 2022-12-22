@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- stylesheet -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- Fontfamily -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Secular+One&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- --stylesheet2-- -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>sign up</title>
+</head>
+<body>
+    <nav id="navbar">
+
+        <div id="logo">
+            <img src="./logo.png" alt="New Kicks">
+        </div>
+
+        <ul>
+            <li class="items"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./index.html #men">Men Shoes</a></li>
+            <li class="items"><a href="./index.html #women">Women Shoes</a></li>
+            <li class="items"><a href="./index.html #kid">Kids Shoes</a></li>
+            <li class="items"><a href="./signin.html">Sign in</a></li>
+            <li class="items"><a href="./signup.html">Sign up</a></li>
+            <li class="cart"><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+    </nav>
+
+    <form class="row g-3 .modal-content" name="myform">
+        <div class="container">
+        <h1 class="ho1">Sign Up</h1>
+  
+          <div class="col-md-6 ">
+            <label for="inputusername1" class="form-label">Username</label>
+            <input type="text" class="form-control" id="inputusername1" required itemid="username1">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="text" class="form-control" id="inputEmail4" required>
+          </div>
+          <div class="col-12">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+          </div>
+          <div class="col-12">
+            <label for="inputre_psw" class="form-label">Re-Password</label>
+            <input type="password" class="form-control" id="inputre_psw" placeholder="Re-Password" required>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary" onclick="addUser();">Sign in</button>
+          </div>
+          </div>
+        </form>
+
+
+        <script src="./demo.js"></script>
+</body>
+</html>
